@@ -31,6 +31,10 @@
                 case 6:
                     ExampleSix();
                 break;
+
+                case 7:
+                    ExampleSeven();
+                break;
             }
 
         }
@@ -45,16 +49,14 @@
             Console.WriteLine("Введите 2 числа для их суммы");
             int intNumberOne = Convert.ToInt32(Console.ReadLine());
             int intNumberTwo = Convert.ToInt32(Console.ReadLine());
-            int intNumberThree = intNumberOne + intNumberTwo;
-            Console.WriteLine("Сумма двух чисел = " + intNumberThree);
+            Console.WriteLine("Сумма двух чисел = " + (intNumberOne + intNumberTwo));
         }
 
         static void ExampleThree(){
             Console.WriteLine("Введите 2 числа для их деления");
             double doubleNumberOne = Convert.ToDouble(Console.ReadLine());
             double doubleNumberTwo = Convert.ToDouble(Console.ReadLine());
-            double doubleNumberTree = doubleNumberOne / doubleNumberTwo;
-            Console.WriteLine("Результат деления – частное = " + doubleNumberTree);
+            Console.WriteLine("Результат деления – частное = " + (doubleNumberOne / doubleNumberTwo));
         }
 
         static void ExampleFour()
@@ -79,13 +81,10 @@
             Console.WriteLine("Первое число : " + numberOne);
             numberTwo = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Второе число : " + numberTwo);
-
             Console.WriteLine("Меняем числа местами");
             numberThree = numberOne;
-
             numberOne = numberTwo;
             numberTwo = numberThree;
-
             Console.WriteLine("Первое число : " + numberOne);
             Console.WriteLine("Второе число : " + numberTwo);
         }
@@ -93,18 +92,29 @@
         static void ExampleSix()
         {
             Console.WriteLine("Введите 3 числа для их умножения между собой");
-            int numberOne, numberTwo, numberThree, numberFour;
-
+            int numberOne, numberTwo, numberThree;
             numberOne = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Первое число : " + numberOne);
             numberTwo = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Второе число : " + numberTwo);
             numberThree = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Третье число : " + numberThree);
+            Console.WriteLine(numberOne + " x " + numberTwo + " x " + numberThree + " = " + (numberOne * numberTwo * numberThree));
+        }
 
-            numberFour = numberOne * numberTwo * numberThree;
-
-            Console.WriteLine(numberOne + " x " + numberTwo + " x " + numberThree + " = " + numberFour);
+        static void ExampleSeven()
+        {
+            Console.WriteLine("Введите 2 числа для операции с ними");
+            int numberOne, numberTwo;
+            numberOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Первое число : " + numberOne);
+            numberTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Второе число : " + numberTwo);
+            Console.WriteLine(numberOne + " + " + numberTwo + " = " + (numberOne + numberTwo));
+            Console.WriteLine(numberOne + " - " + numberTwo + " = " + (numberOne - numberTwo));
+            Console.WriteLine(numberOne + " * " + numberTwo + " = " + (numberOne * numberTwo));
+            Console.WriteLine(numberOne + " / " + numberTwo + " = " + (numberOne / numberTwo));
+            Console.WriteLine(numberOne + " % " + numberTwo + " = " + (numberOne % numberTwo));
         }
     }
 }
