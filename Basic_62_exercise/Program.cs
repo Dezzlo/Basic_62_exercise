@@ -27,6 +27,10 @@
                 case 5:
                     ExampleFive();
                 break;
+
+                case 6:
+                    ExampleSix();
+                break;
             }
 
         }
@@ -84,6 +88,23 @@
 
             Console.WriteLine("Первое число : " + numberOne);
             Console.WriteLine("Второе число : " + numberTwo);
+        }
+
+        static void ExampleSix()
+        {
+            Console.WriteLine("Введите 3 числа для их умножения между собой");
+            int numberOne, numberTwo, numberThree, numberFour;
+
+            numberOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Первое число : " + numberOne);
+            numberTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Второе число : " + numberTwo);
+            numberThree = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Третье число : " + numberThree);
+
+            numberFour = numberOne * numberTwo * numberThree;
+
+            Console.WriteLine(numberOne + " x " + numberTwo + " x " + numberThree + " = " + numberFour);
         }
     }
 }
