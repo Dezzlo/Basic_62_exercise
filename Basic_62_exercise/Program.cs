@@ -19,6 +19,10 @@
                 case 3:
                     ExampleThree();
                 break;
+
+                case 4:
+                    ExampleFour();
+                break;
             }
 
         }
@@ -43,6 +47,19 @@
             double doubleNumberTwo = Convert.ToDouble(Console.ReadLine());
             double doubleNumberTree = doubleNumberOne / doubleNumberTwo;
             Console.WriteLine("Результат деления – частное = " + doubleNumberTree);
+        }
+
+        static void ExampleFour()
+        {
+            Console.WriteLine("Решение примеров :");
+            int numberOne = -1 + 4 * 6;
+            Console.WriteLine("-1 + 4 * 6 = " + numberOne);
+            numberOne = (35 + 5) % 7;
+            Console.WriteLine("(35 + 5) % 7 = " + numberOne);
+            numberOne = 14 + -4 * 6 / 11;
+            Console.WriteLine("14 + -4 * 6 / 11 = " + numberOne);
+            numberOne = 2 + 15 / 6 * 1 - 7 % 2;
+            Console.WriteLine("2 + 15 / 6 * 1 - 7 % 2 = " + numberOne);
         }
     }
 }
