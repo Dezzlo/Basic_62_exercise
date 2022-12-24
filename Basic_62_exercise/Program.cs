@@ -23,6 +23,10 @@
                 case 4:
                     ExampleFour();
                 break;
+
+                case 5:
+                    ExampleFive();
+                break;
             }
 
         }
@@ -60,6 +64,26 @@
             Console.WriteLine("14 + -4 * 6 / 11 = " + numberOne);
             numberOne = 2 + 15 / 6 * 1 - 7 % 2;
             Console.WriteLine("2 + 15 / 6 * 1 - 7 % 2 = " + numberOne);
+        }
+
+        static void ExampleFive()
+        {
+            Console.WriteLine("Введите 2 числа, а программа поменяет их местами");
+            int numberOne, numberTwo, numberThree;
+
+            numberOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Первое число : " + numberOne);
+            numberTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Второе число : " + numberTwo);
+
+            Console.WriteLine("Меняем числа местами");
+            numberThree = numberOne;
+
+            numberOne = numberTwo;
+            numberTwo = numberThree;
+
+            Console.WriteLine("Первое число : " + numberOne);
+            Console.WriteLine("Второе число : " + numberTwo);
         }
     }
 }
