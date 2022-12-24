@@ -8,33 +8,13 @@
             int a = Convert.ToInt32(Console.ReadLine());
             switch (a)
             {
-                case 1:
-                    ExampleOne();
-                break;
-
-                case 2:
-                    ExampleTwo();
-                break;
-
-                case 3:
-                    ExampleThree();
-                break;
-
-                case 4:
-                    ExampleFour();
-                break;
-
-                case 5:
-                    ExampleFive();
-                break;
-
-                case 6:
-                    ExampleSix();
-                break;
-
-                case 7:
-                    ExampleSeven();
-                break;
+                case 1: ExampleOne(); break;
+                case 2: ExampleTwo(); break;
+                case 3: ExampleThree(); break;
+                case 4: ExampleFour(); break;
+                case 5: ExampleFive(); break;
+                case 6: ExampleSix(); break;
+                case 7: ExampleSeven(); break;
             }
 
         }
